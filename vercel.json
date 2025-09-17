@@ -1,0 +1,5 @@
+{
+    "rerites" [
+        { "source": "/api/:path*", "destination": "https://one023b-backend-novo-o97e.onrender.com/:path*" }
+    ]
+}
