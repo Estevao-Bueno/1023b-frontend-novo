@@ -11,7 +11,11 @@ type ProdutoType = {
 function App() {
   const [produtos, setProdutos] = useState<ProdutoType[]>([])
   useEffect(() => {
-    fetch('/api/produtos')
+    fetch('/api/produtos',{
+      headers:{
+        'Authorization': ''
+      }
+    })
       .then((response) => response.json())
       .then((data) => setProdutos(data))
       .catch((error) => console.error('Error fetching data:', error))
